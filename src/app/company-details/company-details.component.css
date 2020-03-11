@@ -1,0 +1,15 @@
+.table{
+    width: 70%;
+    margin: auto;
+    font-family: 'Times New Roman', Times, serif;
+}
+.title-det{
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    padding: 15px 0 15px 0;
+}
+.btn{
+    left: 15%;
+    position: absolute;
+    margin-top: 1%;
+}

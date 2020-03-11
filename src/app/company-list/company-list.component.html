@@ -1,0 +1,6 @@
+<div class="container mt-5">
+    <h1 class="title">Companies List</h1>
+    <div class="list-group">
+        <a class="list-group-item list-group-item-action" *ngFor="let p of companies" [routerLink]="['/companies', p.nid]">{{p.title}}</a>
+    </div>
+</div>

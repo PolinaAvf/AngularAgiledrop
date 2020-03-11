@@ -1,0 +1,21 @@
+div.container {
+    background-color: #007bff;
+    width: 50%;
+    border-radius: .25em;
+    height: 400px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.list-group{
+    padding-top: 10%;
+}
+.title{
+    color: white;
+    text-align: center;
+    padding-top: 5%;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.list-group-item{
+    font-size: large;
+}
