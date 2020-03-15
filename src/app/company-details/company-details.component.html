@@ -25,14 +25,18 @@
           </div> 
       </div>
     </div>
-    <div class="events-list" ngFor="let company of (companies | selectedCompany: id); let i=index">
-      <div class="card" *ngFor="let event of (companies | selectedCompany: id); let j=index">
-        <img class="card-img-top" [src]="event.event_logo" alt="image">
-        <div class="card-body">
-          <h5 class="card-title">{{event.event_title}}</h5>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-          <a href="#" class="btn btn-primary">Go somewhere</a>
+    <div class="events-list">
+    <p class="companies-title">EVENTS</p>
+    <p class="companies-text">WHAT WE ARE UP TO</p>
+      <div class="card" id="event-card" *ngFor="let company of (companies | selectedCompany: id)">
+        <div class="card-body event-body" *ngFor="let event of company['events']">
+          <div class="company-title">
+            <h5 class="card-title event-title">{{event.event_title}}</h5>
+          </div>
+          <p class="card-text date">{{event.event_date}}</p>
+          <img class="card-img-top card-event" [src]="event.event_logo" alt="image"> 
         </div>
+        
       </div>
     </div>
   </div>
