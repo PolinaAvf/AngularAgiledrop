@@ -15,6 +15,7 @@ export class CompanyDetailsComponent implements OnInit {
 
     private id: number;
     companies: Company[];
+    events: Event[];
     private sub: any;
 
     prodIdSnapshot: number;
@@ -27,6 +28,7 @@ export class CompanyDetailsComponent implements OnInit {
     this.sub = this.route.params.subscribe(params => {
 
       this.id = +params['id'];
+      
   });
   }
 

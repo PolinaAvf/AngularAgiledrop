@@ -1,6 +1,43 @@
-<div class="container mt-5">
-    <h1 class="title">Companies List</h1>
-    <div class="list-group">
-        <a class="list-group-item list-group-item-action" *ngFor="let p of companies" [routerLink]="['/companies', p.nid]">{{p.title}}</a>
+<header class="heading">
+    <div class="container">
+        <a [routerLink]="['/companies']" class="heading-link">Agiledrop Angular test</a>
     </div>
-</div>
+</header>
+<div class="container">
+    <p class="companies-title">COMPANIES</p>
+    <p class="companies-text">FIND YOUR OWN</p>
+    <div class="card" *ngFor="let p of companies">
+        <div class="row no-gutters">
+            <div class="col-auto">
+                <img class="card-img-top" [src]="p.logo" alt="image">
+            </div>
+            <div class="col">
+                <div class="card-block px-2">
+                    <div class="company-heading">
+                        <h5 class="card-title">{{p.title}}</h5>
+                        <p class="card-text city">{{p.city}}</p>
+                    </div>
+                    
+                    <p class="card-text description">{{p.description}}</p>
+                </div> 
+                <div class="card-footer w-100 text-muted">
+                    <a class="btn btn-primary" [routerLink]="['/companies', p.nid]">READ MORE</a> 
+                </div> 
+            </div>
+            
+        </div>  
+          
+                
+        
+        </div>
+        
+    </div>
+
+
+
+    <!-- <div class="container mt-5">
+        <h1 class="title">Companies List</h1>
+        <div class="list-group">
+            <a class="list-group-item list-group-item-action" *ngFor="let p of companies" [routerLink]="['/companies', p.nid]">{{p.title}}</a>
+        </div>
+    </div> -->

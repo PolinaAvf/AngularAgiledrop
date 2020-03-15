@@ -1,10 +1,10 @@
-div.container {
+/* div.container {
     background-color: #007bff;
     width: 50%;
     border-radius: .25em;
     height: 400px;
     font-family: 'Times New Roman', Times, serif;
-}
+} */
 
 .list-group{
     padding-top: 10%;
@@ -18,4 +18,100 @@ div.container {
 
 .list-group-item{
     font-size: large;
+}
+
+.company-heading{
+    border-left: 2px solid #1dbddf;
+}
+
+.col-auto, .col{
+    margin-top: 5%;
+}
+
+.card-footer{
+    padding-bottom: 0px;
+}
+
+.col{
+    padding-bottom: 5%;
+}
+
+.heading{
+    background-color: #ef4823;
+    height: 10%;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.heading-link{
+    color: white;
+    text-decoration: none;
+    font-size: 36px;
+}
+
+header.heading div.container{
+    padding-top: 2%;
+}
+
+.btn{
+    background-color: #24c2e2;
+    border: none;
+    border-radius: 25px;
+    font-size: 16px;
+    width: 15%;
+}
+
+.city{
+    color: #c51f40 !important;
+    font-size: 16px;
+}
+
+.card {
+    border: none;
+}
+
+.card-footer{
+    border: none;
+    background-color: transparent;
+    padding-left: 4%;
+    padding-top: 3%;
+}
+.col-auto{
+    margin-right: 5%;
+}
+
+.card-img-top{
+    width: 80px;
+    height: auto;
+}
+
+.card-title{
+    color: #171c23;
+    margin-bottom: 0px;
+    padding-left: 3%;
+    font-size: 22px;
+}
+
+.card-text{
+    color: #55595f;
+    padding-left: 3%;
+}
+
+.description{
+    padding-top: 2%;
+    line-height: 1.6em;
+}
+
+.row{
+    border-bottom: 2px solid #f1f5f6;
+}
+
+.companies-title{
+    font-size: 28px;
+    margin: 0px;
+    margin-top: 7%;
+}
+
+.companies-text{
+    font-size: 16px;
+    margin-top: -5px;
 }

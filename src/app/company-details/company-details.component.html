@@ -1,4 +1,47 @@
-<div class="table-responsive">
+<header class="heading">
+  <div class="container">
+      <a [routerLink]="['/companies']" class="heading-link">Agiledrop Angular test</a>
+  </div>
+</header>
+<div class="main">
+<div class="container" *ngFor="let p of (companies | selectedCompany: id)">
+  <h2 class="company-heading-details">{{ p.title }}</h2>
+  <div class="container c-main">
+    <div class="card">
+      <div class="row no-gutters">
+          <div class="col-auto">
+            <img class="card-img-top" [src]="p.logo" alt="image">
+          </div>
+          <div class="col">
+            <div class="card-block px-2">
+              <p class="card-text description">{{p.description}}</p>
+            </div>
+          </div>
+          <div class="card-footer w-100 text-muted">
+            <div class="location">
+              <img src="../../assets/img/location.png" class="location-icon">
+              <p class="city-name">{{p.city}}</p>
+            </div>
+          </div> 
+      </div>
+    </div>
+    <div class="events-list" ngFor="let company of (companies | selectedCompany: id); let i=index">
+      <div class="card" *ngFor="let event of (companies | selectedCompany: id); let j=index">
+        <img class="card-img-top" [src]="event.event_logo" alt="image">
+        <div class="card-body">
+          <h5 class="card-title">{{event.event_title}}</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <a href="#" class="btn btn-primary">Go somewhere</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+</div>
+
+
+<!-- <div class="table-responsive">
   <h1 class="title-det">Company details</h1>
     <table class="table table-bordered">
         <thead>
@@ -16,10 +59,10 @@
           <td>{{ p.title }}</td>
           <td>{{ p.description }}</td>
           <td>{{ p.city }}</td>
-          <td><img [src]="p.logo" alt="image"></td>
-          <!-- <td>{{ p.logo }}</td> -->
+          <td><img [src]="p.logo" alt="image" class="company-img"></td>
+           <td>{{ p.logo }}</td> 
         </tr>
         </tbody>
       </table>
       <a class="btn btn-outline-primary" [routerLink]="['/companies']">Back To Companies Listing</a>
-    </div>
+    </div> -->

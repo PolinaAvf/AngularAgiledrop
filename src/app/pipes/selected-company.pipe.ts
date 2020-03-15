@@ -7,5 +7,6 @@ import { Company } from '../../companies';
 export class SelectedCompanyPipe implements PipeTransform {
     transform(allCompanies: Company[], companyId: number): any {
         return allCompanies.filter(p => p.nid === companyId);
+        
     }
 }
