@@ -13,7 +13,7 @@ import { CompanyService } from '../services/company.service';
 export class CompanyDetailsComponent implements OnInit {
   
 
-    private id: number;
+    id: number;
     companies: Company[];
     events: Event[];
     private sub: any;
